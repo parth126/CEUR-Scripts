@@ -7,7 +7,7 @@ GitHub: https://github.com/parth126
 License: MIT
 
 Description:
-Iterates over list of papers and fills up base-index.html
+This script assembles the final volume, processes PDFs, and generates the TOC.
 """
 
 __author__ = "Your Name"
@@ -36,7 +36,7 @@ def generate_proceedings(base_folder):
         config = yaml.safe_load(f)
     
     # Create the output directory (e.g., FIRE2019)
-    dir_name = config['acronym'].replace(" ", "")+config['year'].replace(" ", "")
+    dir_name = output_folder if output_folder else config["acronym"].replace(" ", "")+config['year'].replace(" ", "")
 
     os.makedirs(dir_name, exist_ok=True)
     print(f"Creating volume in directory: {dir_name}")
@@ -47,7 +47,7 @@ def generate_proceedings(base_folder):
         html_content = f.read()
 
     # 3. Process working-notes.info
-    info_path = os.path.join(base_folder, 'working-notes.info')
+    info_path = os.path.join(base_folder, 'working-notes-info.csv')
     with open(info_path, 'r') as f:
         # Skip header, read all lines
         all_info = [line.strip() for line in f if line.strip()][1:]
@@ -150,6 +150,7 @@ def generate_proceedings(base_folder):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Assemble CEUR Proceedings")
     parser.add_argument("-b", "--base", required=True, help="Base folder (e.g., 'sample')")
+    parser.add_argument("-o", "--output", help="Optional output folder name (defaults to conference acronym)")
     args = parser.parse_args()
     
     generate_proceedings(args.base)

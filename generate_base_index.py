@@ -11,7 +11,7 @@ Fetches index template from https://ceur-ws.org/Vol-XXX/index.html and creates a
 """
 
 __author__ = "Your Name"
- __copyright__ = "Copyright 2025, Parth Mehta"
+__copyright__ = "Copyright 2025, Parth Mehta"
 __license__ = "MIT" 
 
 import os
@@ -22,7 +22,7 @@ import argparse
 
 def create_base_template(base_folder):
     # Load configuration
-    with open('conference.info.yaml', 'r') as f:
+    with open(os.path.join(base_folder, "conference-info.yaml"), 'r') as f:
         config = yaml.safe_load(f)
     
     # Load your specific editor info snippet
