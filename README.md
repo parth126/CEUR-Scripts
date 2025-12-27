@@ -15,8 +15,12 @@ This repository consists of scripts for automating the creation of CEUR Proceedi
 - Authors are a list of authors separated by a comma
 - No paper title should contain a comma. This is not supported so far and will break the index file.
 
+---
+
 ### 2. Update conference details  
 Edit the conference-info.yaml file to match the conference details
+
+---
 
 ### 3. Create the base index file.  
 
@@ -27,6 +31,8 @@ python generate_base_index.py --base <FIRE_PAPERS>
 - The current script is tested on 27-12-2025 and is not guaranteed to work if CEUR updates the HTML index.html template in future.  
 
 **Note:** It is important that you verify the conference details in the resulting base-index.html file at this point
+
+---
 
 ### 4. Create the proceedings folder
 
@@ -39,6 +45,8 @@ python generate_proceedings.py --base <FIRE_PAPERS> --output <ACRONYM><YEAR>
 - It also creates a copy of the papers in TA_B.pdf format (A = track id and B = paper id). So T2_1.pdf is the first paper in track 2.     
 
 **Note:** It is important that you verify the resulting index.html file for any errors in paper titles or author names at this point
+
+---
 
 ### 5. Run CEUR Checks
 
@@ -53,7 +61,7 @@ bash check-pdf-errors
 **B. Checking the index.html**.
 - The script needs to be copied inside the folder containing PDFs and index.html to be evaluated and then run using the command below
 ```sh
-bash check-pdf-errors
+bash check-index-errors
 ```
 **Note:** This command can only be run after generating index as well as proceedings.
 
