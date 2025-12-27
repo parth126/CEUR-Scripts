@@ -10,7 +10,7 @@ Description:
 Fetches index template from https://ceur-ws.org/Vol-XXX/index.html and creates a conference specific base-index
 """
 
-__author__ = "Your Name"
+__author__ = "Parth Mehta"
 __copyright__ = "Copyright 2025, Parth Mehta"
 __license__ = "MIT" 
 

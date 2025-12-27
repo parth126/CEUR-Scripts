@@ -10,8 +10,8 @@ Description:
 This script assembles the final volume, processes PDFs, and generates the TOC.
 """
 
-__author__ = "Your Name"
- __copyright__ = "Copyright 2025, Parth Mehta"
+__author__ = "Parth Mehta"
+__copyright__ = "Copyright 2025, Parth Mehta"
 __license__ = "MIT" 
 
 
@@ -30,9 +30,9 @@ def get_pdf_page_count(filepath):
         print(f"Error reading {filepath}: {e}")
         return 0
 
-def generate_proceedings(base_folder):
+def generate_proceedings(base_folder, output_folder):
     # 1. Load Configuration
-    with open('conference.info.yaml', 'r') as f:
+    with open(os.path.join(base_folder, "conference-info.yaml"), 'r') as f:
         config = yaml.safe_load(f)
     
     # Create the output directory (e.g., FIRE2019)
@@ -153,4 +153,4 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--output", help="Optional output folder name (defaults to conference acronym)")
     args = parser.parse_args()
     
-    generate_proceedings(args.base)
+    generate_proceedings(args.base, args.output)
