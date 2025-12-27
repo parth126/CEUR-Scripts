@@ -41,3 +41,22 @@ python generate_proceedings.py --base <FIRE_PAPERS> --output <ACRONYM><YEAR>
 **Note:** It is important that you verify the resulting index.html file for any errors in paper titles or author names at this point
 
 ### 5. Run CEUR Checks
+
+CEUR requires 3 checks before uploading the proceedings.
+
+**1. Checking the pdfs**.
+- The script needs to be copied inside the folder containing PDFs to be evaluated and then run using the command below
+```sh
+bash check-pdf-errors
+```
+
+**2. Checking the index.html**.
+- The script needs to be copied inside the folder containing PDFs and index.html to be evaluated and then run using the command below
+```sh
+bash check-pdf-errors
+```
+**Note: ** This command can only be run after generating index as well as proceedings.
+
+**3. W3C Validaiton**
+- This can be done by using the tool here: https://validator.w3.org/nu/#file
+- Simply upload your index.html file and check
