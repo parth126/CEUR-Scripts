@@ -55,7 +55,7 @@ bash check-pdf-errors
 ```sh
 bash check-pdf-errors
 ```
-**Note: ** This command can only be run after generating index as well as proceedings.
+**Note:** This command can only be run after generating index as well as proceedings.
 
 **C. W3C Validaiton**
 - This can be done by using the tool here: https://validator.w3.org/nu/#file
