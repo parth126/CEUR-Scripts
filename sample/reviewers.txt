@@ -1,0 +1,45 @@
+------------------------------------------------------
+Artificial Intelligence for Legal Assistance
+------------------------------------------------------
+Dr. Parth Mehta, DA-IICT Gandhinagar, India
+Dr. Saptarshi Ghosh, IIT Kharagpur, India
+Dr. Kripabandhu Ghosh, TCS Innovations Lab Pune, India
+Paheli Bhattacharya, IIT Kharagpur, India
+
+--------------------------------------------------
+Author profiling and deception detection in Arabic
+--------------------------------------------------
+Dr. Francisco Rangel, Universitat Politècnica de València, Spain
+Dr. Paolo Rosso, Universitat Politècnica de València, Spain
+Bilal Ghanem, Universitat Politècnica de València, Spain
+Javier Sánchez-Junquera, Universitat Politècnica de València, Spain
+
+---------------------------------------------------------------------------
+Hate Speech and Offensive Content Identification in Indo-European Languages
+---------------------------------------------------------------------------
+
+Dr. Christa Womser Hacker- University of Hildesheim
+Dr. Thomas Mandl - University of Hildesheim
+Dr. Sukomal Pal - Indian Institute of Technology (BHU) Varanasi
+Dr. Kripabandhu Ghosh - TCS Research
+Dr. Marcos Zampieri - Rochester Institute of Technology
+Lea Wöbbekind - University of Hildesheim
+Linda Achilles - University of Hildesheim
+Sandip Modha - DAIICT & LDRP-ITR
+Ritesh Kumar - K.M. Institute of Hindi and Linguistics, Dr. Bhimrao Ambedkar University
+Anand Kumar M - NITK Surathkal
+Surupendu Gangopadhyay - DAIICT
+
+-------------------------------------
+Classification of Insincere Questions
+-------------------------------------
+
+Dr. Manjira Sinha, IIT Kharagpur, India
+Monnie Parida, IIT Kharagpur, India
+
+--------------------------------
+Irony Detection in Arabic Tweets
+--------------------------------
+
+Dr. Farah Benamara, IRIT-CNRS, Université de Toulouse, France
+Véronique Moriceau, IRIT-CNRS, Université de Toulouse, France 
