@@ -22,7 +22,7 @@ Edit the conference-info.yaml file to match the conference details
 
 ---
 
-### 3. Create the base index file.  
+### 3. Create the base index file
 
 ```sh
 python generate_base_index.py --base <FIRE_PAPERS>
@@ -34,7 +34,7 @@ python generate_base_index.py --base <FIRE_PAPERS>
 
 ---
 
-### 4. Create the proceedings folder
+### 4. Create the proceedings submission folder
 
 ```sh
 python generate_proceedings.py --base <FIRE_PAPERS> --output <ACRONYM><YEAR>
@@ -52,13 +52,13 @@ python generate_proceedings.py --base <FIRE_PAPERS> --output <ACRONYM><YEAR>
 
 CEUR requires 3 checks before uploading the proceedings.
 
-**A. Checking the pdfs**.
+**A. Checking the pdfs**
 - The script needs to be copied inside the folder containing PDFs to be evaluated and then run using the command below
 ```sh
 bash check-pdf-errors
 ```
 
-**B. Checking the index.html**.
+**B. Checking the index.html**
 - The script needs to be copied inside the folder containing PDFs and index.html to be evaluated and then run using the command below
 ```sh
 bash check-index-errors
