@@ -81,7 +81,7 @@ def generate_proceedings(base_folder, output_folder):
     # Building the Preface list item
     toc_lines = [
         '<ul>',
-        f'<li id="preface"><A href="preface.pdf">Preface</A><BR>',
+        f'<li id="preface"><A href="Preface.pdf">Preface</A><BR>',
         f'{summary_html}</li>',
         '</ul><BR>'
     ] 
