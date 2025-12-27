@@ -1,0 +1,48 @@
+# Conference Details
+acronym: "FIRE"
+year: "2019"
+city: "Kolkata"
+country: "India"
+start_date: "12"
+end_date: "15"
+month: "December"
+
+# Volume Details
+volume_title_long: "Working Notes of the Forum for Information Retrieval Evaluation 2019"
+volume_title_short: "FIRE 2019 Working Notes"
+total_working_notes: "6"
+total_overviews: "2"
+
+# Submission Details
+submission_date: "2019-12-06"
+submitted_by: "Parth Mehta"
+
+# Editor Information
+editors:
+  - name: "Parth Mehta"
+    link: "https://www.linkedin.com/in/parthmehta126/"
+    affiliation_index: 0
+  - name: "Paolo Rosso"
+    link: "http://personales.upv.es/prosso/"
+    affiliation_index: 1
+  - name: "Prasenjit Majumder"
+    link: "https://www.daiict.ac.in/profile/prasenjit-majumder/"
+    affiliation_index: 0
+  - name: "Mandar Mitra"
+    link: "https://www.isical.ac.in/mandar-mitra"
+    affiliation_index: 2
+
+# Editors Affiliation Details
+affiliations:
+  - name: "Dhirubhai Ambani Institute of Information and Communication Technology"
+    link: "http://www.daiict.ac.in/"
+    city: "Gandhinagar"
+    country: "India"
+  - name: "PRHLT research center, Universitat Politècnica de València"
+    link: "https://www.upv.es/index-en.html"
+    city: "Valencia"
+    country: "Spain"
+  - name: "Indian Statistical Institute"
+    link: "http://www.isical.ac.in/"
+    city: "Kolkata"
+    country: "India"
