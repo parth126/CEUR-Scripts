@@ -4,6 +4,17 @@ This repository consists of scripts for automating the creation of CEUR Proceedi
 **Author:** [Parth Mehta](https://www.linkedin.com/in/parthmehta126/)  
 **Organization:** Parmonic 
 
+## Install Dependencies
+CEUR Scripts require python3-pdfminer, poppler-utils, perl and curl
+```sh
+sudo apt update
+sudo apt install python3-pdfminer poppler-utils perl curl
+```
+Python scripts require PyYAML and pypdf
+```sh
+pip install -r requirements.txt
+```
+
 ## Step by Step Usage
 
 ### 1. Collect Data
