@@ -37,6 +37,10 @@ def create_base_template(base_folder):
     # This prevents unclosed ", "", html, flags=re.DOTALL)
     html = re.sub(r"<pre>#.*?</pre>", "", html, flags=re.DOTALL)
 
+    placeholder_url = "https://www.workshop-website.org/loc"
+    if config.get('conference_url'):
+        html = html.replace(placeholder_url, config['conference_url'])
+
     # 2. METADATA REPLACEMENTS
     html = html.replace("Proceedings of the Workshop on Publishing Papers with CEUR-WS", config['volume_title_long'])
     html = html.replace("Publishing Papers with CEUR-WS YYYY", config['volume_title_short'])
