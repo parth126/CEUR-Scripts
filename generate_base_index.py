@@ -107,18 +107,18 @@ def generate_editor_html(config):
     # Build the list of editors with asterisks
     for ed in editors:
         # Create asterisk string (0 -> *, 1 -> **, etc.)
-        stars = "*" * (ed['affiliation_index'] + 1)
+        affiliation_index = f"{(ed['affiliation_index'] + 1)}"
         html.append(
             f'   <a href="{ed["link"]}" target="_blank">'
-            f'<span class="CEURVOLEDITOR">{ed["name"]}</span></a> {stars}<br>'
+            f'<span class="CEURVOLEDITOR">{ed["name"]}</span></a><sup>{affiliation_index}</sup><br>'
         )
     html.append("</h3>\n")
     
     # Build the affiliation key below
     for i, aff in enumerate(affiliations):
-        stars = "*" * (i + 1)
+        affiliation_index = f"{(i + 1)}"
         html.append(
-            f'{stars} <a href="{aff["link"]}" target="_blank">{aff["name"]}</a>, '
+            f'<sup>{affiliation_index}</sup> <a href="{aff["link"]}" target="_blank">{aff["name"]}</a>, '
             f'{aff["city"]}, {aff["country"]}<br>'
         )
     
