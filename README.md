@@ -4,6 +4,17 @@ This repository consists of scripts for automating the creation of CEUR Proceedi
 **Author:** [Parth Mehta](https://www.linkedin.com/in/parthmehta126/)  
 **Organization:** Parmonic 
 
+## Install Dependencies
+CEUR Scripts require python3-pdfminer, poppler-utils, perl and curl
+```sh
+sudo apt update
+sudo apt install python3-pdfminer poppler-utils perl curl
+```
+Python scripts require PyYAML and pypdf
+```sh
+pip install -r requirements.txt
+```
+
 ## Step by Step Usage
 
 ### 1. Collect Data
@@ -15,10 +26,14 @@ This repository consists of scripts for automating the creation of CEUR Proceedi
 - Authors are a list of authors separated by a comma
 - No paper title should contain a comma. This is not supported so far and will break the index file.
 
+---
+
 ### 2. Update conference details  
 Edit the conference-info.yaml file to match the conference details
 
-### 3. Create the base index file.  
+---
+
+### 3. Create the base index file
 
 ```sh
 python generate_base_index.py --base <FIRE_PAPERS>
@@ -28,7 +43,9 @@ python generate_base_index.py --base <FIRE_PAPERS>
 
 **Note:** It is important that you verify the conference details in the resulting base-index.html file at this point
 
-### 4. Create the proceedings folder
+---
+
+### 4. Create the proceedings submission folder
 
 ```sh
 python generate_proceedings.py --base <FIRE_PAPERS> --output <ACRONYM><YEAR>
@@ -40,4 +57,25 @@ python generate_proceedings.py --base <FIRE_PAPERS> --output <ACRONYM><YEAR>
 
 **Note:** It is important that you verify the resulting index.html file for any errors in paper titles or author names at this point
 
+---
+
 ### 5. Run CEUR Checks
+
+CEUR requires 3 checks before uploading the proceedings.
+
+**A. Checking the pdfs**
+- The script needs to be copied inside the folder containing PDFs to be evaluated and then run using the command below
+```sh
+bash check-pdf-errors
+```
+
+**B. Checking the index.html**
+- The script needs to be copied inside the folder containing PDFs and index.html to be evaluated and then run using the command below
+```sh
+bash check-index-errors
+```
+**Note:** This command can only be run after generating index as well as proceedings.
+
+**C. W3C Validaiton**
+- This can be done by using the tool here: https://validator.w3.org/nu/#file
+- Simply upload your index.html file and check
