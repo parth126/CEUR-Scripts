@@ -98,7 +98,7 @@ def generate_proceedings(base_folder, output_folder):
         parts = line.split(',')
         current_track = parts[0]
         title = parts[1]
-        authors = [a.strip('"') for a in parts[2:] if a]
+        authors = [a.strip('"').strip("'") for a in parts[2:] if a]
 
         if current_track != last_track:
             paper_num = 1
